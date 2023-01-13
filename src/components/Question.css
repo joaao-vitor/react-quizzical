@@ -1,0 +1,17 @@
+.question-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    color: #293264;
+    font-size: 0.95rem;
+}
+
+.group-btn {
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    margin-bottom: 1rem;
+    border: 0.794239px solid #DBDEF0;
+}

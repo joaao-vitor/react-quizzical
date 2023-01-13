@@ -1,0 +1,21 @@
+.App {
+	background-color: #F5F7FB;
+
+	font-family: 'Karla', sans-serif;
+}
+.blob-up, .blob-down{
+    position: absolute;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.blob-up{
+	top:0;
+	right: 0;
+}
+.blob-down{
+	bottom: 0;
+	left: 0;
+}

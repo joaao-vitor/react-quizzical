@@ -1,0 +1,175 @@
+.modal-container {
+    overflow-y: auto;
+
+    color: #293264;
+
+    font-family: 'Inter';
+
+    width: 80vw;
+    max-width: 600px;
+    height: 85vh;
+
+    margin: auto;
+    padding: 3.5rem 2.5rem 0 2.5rem;
+    position: absolute;
+    z-index: 100;
+
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 4px 7px 29px -8px rgba(0, 0, 0, 0.5);
+}
+
+.options-section {
+    margin-bottom: 1.5rem;
+}
+
+.options-title {
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.options-subtitle {
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    margin-top: 0.5rem;
+}
+
+.config-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.difficulties {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.difficulty {
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 2px solid rgba(0, 0, 0, 0.238);
+    border-radius: 1.5rem;
+}
+
+.difficulties h4 {
+    grid-column: span 2;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background: none;
+    margin: 0;
+    color: #293264;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.15em solid #293264;
+    border-radius: 0.5em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25em;
+    transform: scale(0);
+    transition: 70ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: CanvasText;
+}
+
+.questions-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.questions-number select {
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+}
+
+.categories {
+    margin-top: 1.5rem;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 1rem;
+    max-height: 180px;
+
+    overflow: auto;
+
+    gap: 1rem;
+    width: 100%;
+}
+
+.categories-container button {
+    padding: 0.5rem;
+    text-align: left;
+    background: none;
+    background-color: rgb(248, 250, 252);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.categories-container button.selected {
+    background-color: rgb(235, 245, 255);
+    color: #293264;
+}
+
+.options-btn-group {
+    display: flex;
+    padding: 0.5rem;
+    justify-self: flex-end;
+    align-self: flex-end;
+    gap: 0.5rem;
+}
+
+.options-btn-group button {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+.options-btn-group .start {
+    background-color: #293264;
+    color: white;
+}
+
+.options-btn-group .back {
+    border: 1px solid #29326443;
+}
+
+@media screen and (max-width:425px) {
+    .modal-container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .difficulty{
+        grid-column: span 2;
+    }
+}

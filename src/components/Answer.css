@@ -1,0 +1,33 @@
+.answer-btn {
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #2932648b;
+
+    margin-right: 1.2rem;
+
+    border: none;
+    border: 0.794239px solid #4D5B9E;
+    border-radius: 0.8rem;
+
+    padding: 0.5rem 1.5rem;
+}
+
+.correct-answer {
+    font-weight: 800;
+    color: #293264;
+    border: none;
+    background-color: #94D7A2;
+}
+
+.selected{
+    background-color: #293264;
+    color: white;
+}
+
+.wrong-answer {
+    border: none;
+    background-color: #F8BCBC;
+}

@@ -1,0 +1,47 @@
+.main-container{
+    
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.game-container {
+    padding: 2.5rem 4rem;
+    z-index: 1;
+}
+
+.game-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.game-score {
+    font-family: 'Inter';
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    color: #293264;
+}
+
+.game-btn {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #F5F7FB;
+
+    border-radius: 1.5rem;
+    padding: 1.1rem 2rem;
+    outline: none;
+    border: none;
+    background-color: #4D5B9E;
+
+    cursor: pointer;
+}
